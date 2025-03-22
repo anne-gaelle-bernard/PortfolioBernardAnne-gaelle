@@ -11,20 +11,12 @@
 </head>
 <body>
 <div class="formulaire ">
-<?php 
-if (file_exists('envoyer_email.php')) {
-    include 'envoyer_email.php';
-} else {
-    echo '<p style="color: red;">Error: envoyer_email.php file is missing.</p>';
-}
-?>
+
 </div>
-    <!-- Background effects -->
     <div class="bg-grid"></div>
     <div class="bg-glow"></div>
     <div class="bg-glow-2"></div>
     
-    <!-- Navigation -->
     <nav class="navbar">
         <a href="#" class="logo">FUTURE<span style="color: #fff;">DEV</span></a>
         <div class="nav-links">
@@ -36,7 +28,6 @@ if (file_exists('envoyer_email.php')) {
         </div>
     </nav>
     
-    <!-- Hero Section -->
     <header id="home">
         <div class="container">
             <div class="hero">
@@ -44,10 +35,9 @@ if (file_exists('envoyer_email.php')) {
                 <p>Building the future of the web with cutting-edge technologies and innovative user experiences.</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="Anne-gaelle_Bernard.pdf" class="btn btn-outline" download>Download CV</a>
+                    <a href="./Anne-gaelle Bernard .pdf" class="btn btn-outline" download>Download CV</a>
                 </div>
                 
-                <!-- Floating elements -->
                 <div class="floating-cube cube-1"></div>
                 <div class="floating-cube cube-2"></div>
                 <div class="floating-cube cube-3"></div>
@@ -55,7 +45,6 @@ if (file_exists('envoyer_email.php')) {
         </div>
     </header>
     
-    <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="container">
             <h2 class="section-title">Tech Skills</h2>
@@ -112,7 +101,6 @@ if (file_exists('envoyer_email.php')) {
         </div>
     </section>
     
-    <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
@@ -177,7 +165,6 @@ if (file_exists('envoyer_email.php')) {
         </div>
     </section>
     
-    <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">More About Me</h2>
@@ -208,8 +195,7 @@ if (file_exists('envoyer_email.php')) {
         </div>
     </section>
     
-    <!-- Contact Section -->
- <!-- Contact Section -->
+  
 <section id="contact" class="section">
     <div class="container">
         <h2 class="section-title">Get In Touch</h2>
@@ -228,7 +214,6 @@ if (file_exists('envoyer_email.php')) {
                     </div>
                 </div>
             </div>
-            <!-- Floating particles for effect -->
             <div class="particle"></div>
             <div class="particle"></div>
             <div class="particle"></div>
@@ -237,7 +222,6 @@ if (file_exists('envoyer_email.php')) {
     </div>
 </section>
     
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -249,7 +233,6 @@ if (file_exists('envoyer_email.php')) {
         </div>
     </footer>
     <script>
-    // Simple typing effect
     const typedTextElement = document.querySelector('.typed-text');
     const textArray = ["Web Developer", "UI/UX Designer", "Creative Coder"];
     let textIndex = 0;
@@ -280,11 +263,9 @@ if (file_exists('envoyer_email.php')) {
         setTimeout(type, isDeleting ? 50 : typingDelay);
     }
 
-    // Start typing effect
     document.addEventListener('DOMContentLoaded', () => {
         setTimeout(type, 1000);
 
-        // Smooth scrolling for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
